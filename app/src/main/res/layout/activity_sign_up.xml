@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:padding="20sp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:id="@+id/iner_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20sp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:src="@drawable/helperlogo"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Signup"
+            android:textColor="#F5EA5D31"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/iner_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20sp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/gmail_L"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:backgroundTint="#80F6D6CC"
+                    android:hint="Gmail"
+                    android:inputType="textWebEmailAddress|text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#F5EA5D31">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/password"
+                    android:backgroundTint="#80F6D6CC"
+                    android:hint="password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout_id1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleTint="#F5EA5D31">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/username"
+                    android:backgroundTint="#80F6D6CC"
+                    android:hint="username"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleTint="#F5EA5D31">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/mobile"
+                    android:backgroundTint="#80F6D6CC"
+                    android:hint="profession "
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleTint="#F5EA5D31">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/profession"
+                    android:backgroundTint="#80F6D6CC"
+                    android:hint="mobile number"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/resister"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:backgroundTint="@color/white"
+                android:text="resister"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/login1_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="#F5EA5D31"
+                android:text="login"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
